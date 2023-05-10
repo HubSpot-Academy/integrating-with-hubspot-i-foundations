@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, * {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: 31%;
+    margin: 1rem 0.4rem;
+    padding: 1rem 0.4rem 2.5rem 0.4rem;
+    border: solid 1px lightgrey;
+    border-radius: 15px;
+    box-shadow: 3px 2px 6px lightgrey;
+}
+
+.card__email {
+    font-size: 1rem;
+}
+
+.form-wrapper {
+    font-size: 18px;
+    max-width: 768px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: solid 1px lightgrey;
+    border-radius: 15px;
+    box-shadow: 3px 2px 6px lightgrey;
+}
+
+label, input {
+    margin-top: 5px;
+    display: block;
+    font-size: inherit;
+}
+
+input[type="text"] {
+    padding: .25rem;
+}
+
+input[type="submit"] {
+    background-color: lightgrey;
+    border: none;
+    padding: .375rem 1rem;
+    margin-top: 10px;
+}
