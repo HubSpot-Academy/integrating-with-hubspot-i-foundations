@@ -100,7 +100,7 @@ app.get('/oauth-callback', async (req, res) => {
         const responseBody = await axios.post('https://api.hubapi.com/oauth/v1/token', querystring.stringify(authCodeProof));
         // res.json(responseBody.data);
         // 4. Get access and refresh tokens
-        refreshTokenStore[req.sessionID] = responseBody.data.access_token;
+        refreshTokenStore[req.sessionID] = responseBody.data.refresh_token;
         accessTokenCache.set(req.sessionID, responseBody.data.access_token, Math.round(responseBody.data.expires_in * 0.75));
         res.redirect('/');
     } catch (e) {
